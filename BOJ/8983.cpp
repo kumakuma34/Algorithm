@@ -35,6 +35,8 @@ int main(){
 		}
 		else
 			ans++;
+
+            
 		
 	}
 	cout<<ans<<endl;
