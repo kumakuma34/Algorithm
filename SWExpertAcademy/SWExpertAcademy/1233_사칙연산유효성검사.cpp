@@ -20,14 +20,14 @@ int main(int argc, char** argv)
 			char c;
 			cin >> i >> c;
 
-			if (i <= n / 2) {
+			if (i <= n / 2) {//자식이 있는 경우
 				int l, r;
-				if (i == n / 2 && n % 2 == 0) cin >> l;//왼쪽 노드가 존재하는 번호
+				if (i == n / 2 && n % 2 == 0) cin >> l;//왼쪽 노드만 존재
 				else cin >> l >> r;
 
 				if (c >= '0' && c <= '9') ans = 0;
 			}
-			else {
+			else {//자식이 없는leaf 노드
 				if (!(c >= '0' && c <= '9')) ans = 0;
 			}
 		}
